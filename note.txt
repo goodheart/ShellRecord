@@ -1,0 +1,19 @@
+$LOGNAME #登陆用户名
+date #日期
+read variable #读取变量给variable
+read x y #可同时读取多个变量
+read #自动读给REPLY
+read -p "please input:" #自动读给REPLY
+#字符串测试
+[ -z str ] #如果字符串str 长度为0，返回真
+[ -n str ] #如果字符串str长度不为0，返回真
+[ str1 = str2 ] #两字符串相等
+[ str1 != str2 ] #两字符串不等
+#整数测试
+整数测试也可以使用let命令或双圆括号
+两种测试方法的区别是：
+	1、使用的操作符不同
+	2、let和双圆括号中可以使用算术表达式，而中括号不能
+	3、let 和双圆括号中，操作符两边可以不留空格
+
+
